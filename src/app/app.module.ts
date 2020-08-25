@@ -12,6 +12,9 @@ import { ProjectsComponent } from './projects/projects.component';
 import { ArticlesComponent } from './articles/articles.component';
 import { PodcastComponent } from './podcast/podcast.component';
 import { CrossfitComponent } from './crossfit/crossfit.component';
+import { UserComponent } from './user/user.component';
+import { PostsComponent } from './news/posts/posts.component';
+import { MasterComponent } from './master/master.component';
 
 const appRoutes: Routes = [
   { path: 'articles', component: ArticlesComponent },
@@ -29,7 +32,10 @@ const appRoutes: Routes = [
     ProjectsComponent,
     ArticlesComponent,
     PodcastComponent,
-    CrossfitComponent
+    CrossfitComponent,
+    UserComponent,
+    PostsComponent,
+    MasterComponent
   ],
   imports: [
     BrowserModule,
