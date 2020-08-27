@@ -8,7 +8,7 @@ import { ProjectsComponent } from './projects/projects.component';
 import { HomeComponent } from './home/home.component';
 
 const routes: Routes = [
-  { path: ''    , component: HomeComponent     },
+  { path: ''        , component: HomeComponent     },
   { path: 'articles', component: ArticlesComponent },
   { path: 'crossfit', component: CrossfitComponent },
   { path: 'news'    , component: NewsComponent     },
