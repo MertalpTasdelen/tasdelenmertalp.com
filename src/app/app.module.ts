@@ -13,6 +13,9 @@ import { PodcastComponent } from './podcast/podcast.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { HomeComponent } from './home/home.component';
 import { PostsComponent } from './news/posts/posts.component';
+import { NgxAudioPlayerModule } from 'ngx-audio-player';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 
 @NgModule({
   declarations: [
@@ -29,7 +32,9 @@ import { PostsComponent } from './news/posts/posts.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    NgxAudioPlayerModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
