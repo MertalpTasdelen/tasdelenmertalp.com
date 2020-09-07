@@ -1,33 +1,54 @@
-<div class="p-0">
-  <img src="assets/img/main_background.jpg" class="img-fluid" alt="Main Background Image">
-</div>
-
-<div class="row">
-  <div class="col pr-0">
-    <div class="hover hover-1 text-white rounded"><img src="assets/img/writing_background.jpg" alt="">
-      <div class="hover-overlay"></div>
-      <div class="hover-1-content">
-        <h3 class="hover-1-title text-uppercase font-weight-bold mb-0"> <span class="font-weight-light  ml-10">Image </span>Caption</h3>
-        <p class="hover-1-description font-weight-light mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+<div>
+  <div class="hover hover-2 text-white rounded"><img src="assets/img/main_background.jpg" alt="">
+    <div class="hover-overlay"></div>
+    <div class="hover-2-content px-5 py-4">
+      <h3 class="hover-2-title text-uppercase font-weight-bold mb-0"> <span class="font-weight-light">Burasi
+        </span>Neresi MI ?</h3>
+      <p class="hover-2-description text-uppercase">Burasi<br>adipisicing elit.</p>
+    </div>
+  </div>
+  <div>
+    <div class="row">
+      <div class="col p-0">
+        <div class="hover hover-1 text-white rounded"><img src="assets/img/writing_background.jpg" alt="">
+          <div class="hover-overlay"></div>
+          <div class="hover-1-content">
+            <h3 class="hover-1-title text-uppercase font-weight-bold pl-2"> <span class="font-weight-light  ml-10">Apple
+              </span>Glass</h3>
+            <p class="hover-1-description font-weight-light pl-2">Yeni gelecek apple glass hakkinda merak ettiklerimiz.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col p-0">
+        <div class="hover hover-1 text-white rounded"><img src="assets/img/writing_background.jpg" alt="">
+          <div class="hover-overlay"></div>
+          <div class="hover-1-content">
+            <h3 class="hover-1-title text-uppercase font-weight-bold pl-2"> <span class="font-weight-light">Image
+              </span>Caption</h3>
+            <p class="hover-1-description font-weight-light pl-2">Lorem ipsum dolor sit amet, consectetur adipisicing
+              elit.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col p-0">
+        <div class="hover hover-1 text-white rounded"><img src="assets/img/writing_background.jpg" alt="">
+          <div class="hover-overlay"></div>
+          <div class="hover-1-content">
+            <h3 class="hover-1-title text-uppercase font-weight-bold pl-2"> <span class="font-weight-light">Image
+              </span>Caption</h3>
+            <p class="hover-1-description font-weight-light pl-2">Lorem ipsum dolor sit amet, consectetur adipisicing
+              elit.</p>
+          </div>
+        </div>
       </div>
     </div>
   </div>
-  <div class="col p-0">
-    <div class="hover hover-1 text-white rounded"><img src="assets/img/writing_background.jpg" alt="">
-      <div class="hover-overlay"></div>
-      <div class="hover-1-content">
-        <h3 class="hover-1-title text-uppercase font-weight-bold mb-0"> <span class="font-weight-light">Image </span>Caption</h3>
-        <p class="hover-1-description font-weight-light mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-      </div>
-    </div>
-  </div>
-  <div class="col p-0">
-    <div class="hover hover-1 text-white rounded"><img src="assets/img/writing_background.jpg" alt="">
-      <div class="hover-overlay"></div>
-      <div class="hover-1-content">
-        <h3 class="hover-1-title text-uppercase font-weight-bold mb-0"> <span class="font-weight-light">Image </span>Caption</h3>
-        <p class="hover-1-description font-weight-light mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-      </div>
-    </div>
+  <div>
+    <img src="assets/img/cover_art.jpeg" class="img-fluid" alt="">
+    <mat-basic-audio-player [audioUrl]="msbapAudioUrl" [title]="msbapTitle" [autoPlay]="false"
+      [displayTitle]="msbapDisplayTitle" [displayVolumeControls]="msbapDisplayVolumeControls" muted="muted"
+      (trackEnded)="onEnded($event)">
+    </mat-basic-audio-player>
   </div>
 </div>
