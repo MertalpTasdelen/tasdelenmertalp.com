@@ -1,5 +1,6 @@
-<div>
-  <div class="hover hover-2 text-white rounded"><img src="assets/img/main_background.jpg" alt="">
+<div class="container">
+  <div class="py-bottom-15">
+  <div class="hover hover-2 text-white h-25 rounded py-bottom-5"><img src="assets/img/main_background.jpg" alt="">
     <div class="hover-overlay"></div>
     <div class="hover-2-content px-5 py-4">
       <h3 class="hover-2-title text-uppercase font-weight-bold mb-0"> <span class="font-weight-light">Burasi
@@ -7,23 +8,25 @@
       <p class="hover-2-description text-uppercase">Burasi<br>adipisicing elit.</p>
     </div>
   </div>
+</div>
+
   <div>
-    <div class="row">
-      <div class="col p-0">
+    <div class="row py-3">
+      <div class="col  mb-3 mb-lg-0">
         <div class="hover hover-1 text-white rounded"><img src="assets/img/writing_background.jpg" alt="">
           <div class="hover-overlay"></div>
-          <div class="hover-1-content">
-            <h3 class="hover-1-title text-uppercase font-weight-bold pl-2"> <span class="font-weight-light  ml-10">Apple
+          <div class="hover-1-content px-5 py-4">
+            <h3 class="hover-1-title text-uppercase font-weight-bold"> <span class="font-weight-light">Apple
               </span>Glass</h3>
             <p class="hover-1-description font-weight-light pl-2">Yeni gelecek apple glass hakkinda merak ettiklerimiz.
             </p>
           </div>
         </div>
       </div>
-      <div class="col p-0">
+      <div class="col  mb-3 mb-lg-0">
         <div class="hover hover-1 text-white rounded"><img src="assets/img/writing_background.jpg" alt="">
           <div class="hover-overlay"></div>
-          <div class="hover-1-content">
+          <div class="hover-1-content px-5 py-4">
             <h3 class="hover-1-title text-uppercase font-weight-bold pl-2"> <span class="font-weight-light">Image
               </span>Caption</h3>
             <p class="hover-1-description font-weight-light pl-2">Lorem ipsum dolor sit amet, consectetur adipisicing
@@ -31,10 +34,10 @@
           </div>
         </div>
       </div>
-      <div class="col p-0">
+      <div class="col  mb-3 mb-lg-0">
         <div class="hover hover-1 text-white rounded"><img src="assets/img/writing_background.jpg" alt="">
           <div class="hover-overlay"></div>
-          <div class="hover-1-content">
+          <div class="hover-1-content px-5 py-4">
             <h3 class="hover-1-title text-uppercase font-weight-bold pl-2"> <span class="font-weight-light">Image
               </span>Caption</h3>
             <p class="hover-1-description font-weight-light pl-2">Lorem ipsum dolor sit amet, consectetur adipisicing
@@ -44,11 +47,58 @@
       </div>
     </div>
   </div>
-  <div>
-    <img src="assets/img/cover_art.jpeg" class="img-fluid" alt="">
-    <mat-basic-audio-player [audioUrl]="msbapAudioUrl" [title]="msbapTitle" [autoPlay]="false"
-      [displayTitle]="msbapDisplayTitle" [displayVolumeControls]="msbapDisplayVolumeControls" muted="muted"
-      (trackEnded)="onEnded($event)">
-    </mat-basic-audio-player>
+
+  <div class="py-3 row">
+    <div class="col-lg-6">
+      <img src="assets/img/cover_art.jpeg" class="img-fluid rounded" alt="">
+    </div>
+    <div class="col-lg-6">
+      <mat-advanced-audio-player [playlist]="msaapPlaylist" [displayTitle]="msaapDisplayTitle" [autoPlay]="false" 
+      muted="muted" [displayPlaylist]="msaapDisplayPlayList" [pageSizeOptions]="msaapPageSizeOptions" (trackEnded)="onEnded($event)"
+          [displayVolumeControls]="msaapDisplayVolumeControls"
+          [expanded]="true"></mat-advanced-audio-player> 
+    </div>
+  </div>
+
+
+  <div class="py-3">
+    <div class="row">
+      <div class="col-lg-4 mb-3 mb-lg-0">
+        <div class="hover hover-3 text-white rounded"><img src="assets/img/projects_background.jpg" alt="">
+          <div class="hover-overlay"></div>
+          <div class="hover-3-content px-5 py-4">
+            <h3 class="hover-3-title text-uppercase font-weight-bold mb-1"><span class="font-weight-light">Image </span>Caption</h3>
+            <p class="hover-3-description small text-uppercase mb-0">Lorem ipsum dolor sit amet, consectetur <br>adipisicing elit.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="hover hover-3 text-white rounded"><img src="assets/img/projects_background.jpg" alt="">
+          <div class="hover-overlay"></div>
+          <div class="hover-3-content px-5 py-4">
+            <h3 class="hover-3-title text-uppercase font-weight-bold mb-1"><span class="font-weight-light">Image </span>Caption</h3>
+            <p class="hover-3-description small text-uppercase mb-0">Lorem ipsum dolor sit amet, consectetur <br>adipisicing elit.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="hover hover-3 text-white rounded"><img src="assets/img/projects_background.jpg" alt="">
+          <div class="hover-overlay"></div>
+          <div class="hover-3-content px-5 py-4">
+            <h3 class="hover-3-title text-uppercase font-weight-bold mb-1"><span class="font-weight-light">Image </span>Caption</h3>
+            <p class="hover-3-description small text-uppercase mb-0">Lorem ipsum dolor sit amet, consectetur <br>adipisicing elit.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="py-3 row">
+    <div class="col-lg-6">
+      <img src="assets/img/climbing.jpg" class="img-fluid rounded" alt="">
+    </div>
+    <div class="col-lg-6">
+TEST
+    </div>
   </div>
 </div>

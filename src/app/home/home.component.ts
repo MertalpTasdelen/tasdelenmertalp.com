@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Track } from 'ngx-audio-player';   
 
 
 @Component({
@@ -8,12 +9,27 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
  // Material Style Basic Audio Player Title and Audio URL
-  msbapTitle = 'Audio Title';
-  msbapAudioUrl = '/assets/episodes/TahtaMasaE5v0_1.mp3';   
-   
-  msbapDisplayTitle = false; 
-  msbapDisplayVolumeControls = true;  
-  // msbapDisablePositionSlider = true;
+  msaapDisplayTitle = true;
+  msaapDisplayPlayList = true;
+  msaapPageSizeOptions = [2,4,6];
+  msaapDisplayVolumeControls = true;
+  msaapDisablePositionSlider = true;
+
+  // Material Style Advance Audio Player Playlist
+msaapPlaylist: Track[] = [
+  {
+    title: 'Audio One Title',
+    link: '/assets/episodes/TahtaMasaE5v0_1.mp3'
+  },
+  {
+    title: 'Audio Two Title',
+    link: '/assets/episodes/TahtaMasaE5v0_1.mp3'
+  },
+  {
+    title: 'Audio Three Title',
+    link: '/assets/episodes/TahtaMasaE5v0_1.mp3'
+  },
+];
 
   constructor() { }
 
