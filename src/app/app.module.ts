@@ -15,6 +15,7 @@ import { HomeComponent } from './home/home.component';
 import { PostsComponent } from './news/posts/posts.component';
 import { NgxAudioPlayerModule } from 'ngx-audio-player';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { FooterComponent } from './footer/footer.component';
 
 
 @NgModule({
@@ -27,7 +28,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     PodcastComponent,
     ProjectsComponent,
     HomeComponent,
-    PostsComponent
+    PostsComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
